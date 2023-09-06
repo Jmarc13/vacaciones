@@ -1,0 +1,54 @@
+/* Definir la animación */
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .rotate-left {
+    animation: rotatee 20s linear infinite;
+}
+
+@keyframes rotatee {
+    0% {
+        transform: rotate(0deg); /* Gira desde 0 grados */
+    }
+    100% {
+        transform: rotate(-360deg); /* Gira a -360 grados (una vuelta completa en sentido contrario a las manecillas del reloj) */
+    }
+}
+.row{
+  text-align: center;
+}
+.tituloback{
+    background-image: url('/img/R.gif');
+    background-size: 200px 200px;
+}
+  body{
+    background-color:greenyellow;
+    background-image: url('/img/helicopter.png');
+  }
+
+  .espacio{
+    margin-top:500px;
+  }
+  /* Aplicar la animación a la imagen */
+  .rotate-scale-up{
+    animation: rotate 20s linear infinite; 
+  }
+
+.container-fluid{
+    background-color: yellow;
+}
+.title{
+    color: black;
+}
+.botones{
+   text-align: center;
+}
+button:hover{
+    height: 100px;
+    width: 500px;
+}
